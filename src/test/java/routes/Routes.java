@@ -2,6 +2,7 @@ package routes;
 
 public class Routes {
 	
+	// 1
 	//This class is purely used for storing the base URL ,end points for all APIs
 	
 	
