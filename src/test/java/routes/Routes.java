@@ -26,7 +26,16 @@ public class Routes {
 	public static final String UPDATE_PRODUCT = "/products/{id}";
 	public static final String DELETE_PRODUCT = "/products/{id}";
 	
-	
-	
+	//carts
+	public static final String GET_ALL_CARTS = "/carts";
+	public static final String GET_CART_BY_ID = "/carts/{id}";
+	public static final String GET_CARTS_WITH_LIMIT = "carts?limit={limit}";
+	public static final String GET_CARTS_SORTED = "/carts?sort={order}";
+	public static final String GET_CARTS_FROM_RANGE = "carts?startDate={frontDate}&endDate={ToDate}";
+	public static final String GET_CART_FROM_USERID = "carts/user/{userId}";
+	public static final String CREATE_CART = "/carts";
+	public static final String UPDATE_CART = "/carts/{id}";
+	public static final String PARTIAL_UPDATE_CART = "/carts/{id}";
+	public static final String DELETE_CART = "/carts/{id}";
 
 }

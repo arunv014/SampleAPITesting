@@ -2,59 +2,28 @@ package pojo;
 
 public class Products {
 	
-	//2
+	private int productId;
+	private int quantity;
 	
-	/*
-	 * Pojo classes are used to create the payload. Payload is sent only for POST,
-	 * PATCH etc..
-	 * 
-	 * Here we use the concept of encapsulation such that the variables are not
-	 * accessible directly they are only accessible using the getters and setters methods.
-	 * 
-	 * Here create constructor along with getters and setters for the private variables.
-	 * Constructor always has the same name as the class
-	 */
-	
-	private String title;
-	private double price;
-	private String description;
-	private String image;
-	private String category;
-	
-	//Constructor
-	public Products(String title, double price, String description, String image, String category){
-		this.title=title;
-		this.price=price;
-		this.description=description;
-		this.image=image;
-		this.category=category;
+	public Products(int productId, int quantity){
+		this.productId=productId;
+		this.quantity=quantity;
 	}
 	
-	//Getters and setters
-	public String getTitle() {
-		return title;
+	public int getProductId() {
+		return productId;
 	}
 	
-	public void setTitle(String title) {
-		this.title=title;
+	public void setProductId(int productId) {
+		this.productId=productId;
 	}
 
-	public double getPrice() {
-		return price;
+	public int getQuantity() {
+		return quantity;
 	}
 
-	public void setPrice(double price) {
-		this.price = price;
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
-	
-	public String getDescription() {
-		return description;
-	}
-	
-	public void setPrice(String description){
-		this.description=description;
-	}
-	
-	
 
 }
