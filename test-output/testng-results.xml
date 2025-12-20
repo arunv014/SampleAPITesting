@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-20T16:13:44 JST" name="Default suite" finished-at="2025-12-20T16:13:50 JST" duration-ms="5750">
+  <suite started-at="2025-12-20T18:33:51 JST" name="Default suite" finished-at="2025-12-20T18:33:57 JST" duration-ms="5713">
     <groups>
     </groups>
-    <test started-at="2025-12-20T16:13:44 JST" name="Default test" finished-at="2025-12-20T16:13:50 JST" duration-ms="5750">
+    <test started-at="2025-12-20T18:33:51 JST" name="Default test" finished-at="2025-12-20T18:33:57 JST" duration-ms="5713">
       <class name="testcases.ProductTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.ProductTests@24c1b2d2]" started-at="2025-12-20T16:13:44 JST" name="setup" finished-at="2025-12-20T16:13:45 JST" duration-ms="657" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.ProductTests@23941fb4]" started-at="2025-12-20T18:33:51 JST" name="setup" finished-at="2025-12-20T18:33:52 JST" duration-ms="807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testGetAllProducts()[pri:0, instance:testcases.ProductTests@24c1b2d2]" started-at="2025-12-20T16:13:45 JST" name="testGetAllProducts" finished-at="2025-12-20T16:13:50 JST" duration-ms="4832" status="PASS">
+        <test-method signature="testToRetrieveAscendingOrderProducts()[pri:0, instance:testcases.ProductTests@23941fb4]" started-at="2025-12-20T18:33:52 JST" name="testToRetrieveAscendingOrderProducts" finished-at="2025-12-20T18:33:57 JST" duration-ms="4651" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetAllProducts -->
+        </test-method> <!-- testToRetrieveAscendingOrderProducts -->
       </class> <!-- testcases.ProductTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

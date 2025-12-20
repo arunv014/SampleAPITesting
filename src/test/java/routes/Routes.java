@@ -18,7 +18,7 @@ public class Routes {
 	//Products - here we will add all the endpoints replated to products
 	public static final String GET_ALL_PRODUCTS = "/products";
 	public static final String GET_PRODUCT_BY_ID = "/products/{id}";
-	public static final String GET_PRODUCTS_WITH_LIMIT = "/products?limits={limit}";
+	public static final String GET_PRODUCTS_WITH_LIMIT = "/products?limit={limit}";
 	public static final String GET_PRODUCTS_SORTED = "/products?sort={order}";
 	public static final String GET_ALL_CATEGORIES = "/products/categories";
 	public static final String GET_PRODUCTS_BY_CATEGORY = "/products?category={category}";

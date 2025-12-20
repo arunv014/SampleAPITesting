@@ -1,5 +1,7 @@
 package testcases;
 
+import java.util.List;
+
 import org.testng.annotations.BeforeClass;
 
 import io.restassured.RestAssured;
@@ -30,6 +32,25 @@ public class BaseClass {
 		
 		//initialize the configReader object
 		configReader = new ConfigReader();
+	}
+	
+	public boolean isDescending(List<Integer> list) 
+	{
+		for(int i=0; i<list.size()-1; i++) {
+			if(list.get(i) < list.get(i+1)) {
+				return false;
+			}
+		}return true;
+	}
+	
+	public boolean isAscending(List<Integer> list) {
+
+		for (int i = 0; i > list.size()-1; i++) {
+			if (list.get(i) < list.get(i + 1)) {
+				return false;
+			}
+		}
+		return true;
 	}
 	
 
