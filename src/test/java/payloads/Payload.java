@@ -1,11 +1,22 @@
 package payloads;
+import java.util.ArrayList;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Locale;
+import java.util.Date;
 import java.util.Random;
 
 import com.github.javafaker.Faker;
 
+import pojo.Address;
 import pojo.Cart;
+import pojo.CartProduct;
+import pojo.Geolocation;
+import pojo.Name;
 import pojo.Product;
 import pojo.Products;
+import pojo.User;
 
 public class Payload {
 	
@@ -38,7 +49,7 @@ public class Payload {
 	
 	//creating a list of categories from which randomly we can assign the categor.
 	
-	private static final String categories[] = {"books","cakes", "furniture", "Banks", "AI bots"};
+	private static final String categories[] = {"women's clothing","electronics", "furniture", "jewelery", "men's clothing"};
 	
 	//creating Random class object in Java to randomly generate 
 	private static final Random random = new Random();
@@ -60,6 +71,64 @@ public class Payload {
 		return new Product(title, price, description, imageUrl, category);
 		
 	}
+	
+	//User payload
+	
+	//String email, String username, String password, Name name, Address address, String phone
+	
+	public static User userPayLoad() {
+		
+		//Name
+		String firstname = faker.name().firstName();
+		String lastname = faker.name().lastName();
+		
+		Name name = new Name(firstname, lastname);
+		
+		
+		//Geolocation
+		String lat = faker.address().latitude();
+		String lng = faker.address().longitude();
+		
+		Geolocation geolocation = new Geolocation(lat, lng);
+		
+		//Address
+		String city = faker.address().city();
+		String street = faker.address().streetName();
+		int number = random.nextInt(100);
+		String zipcode = faker.address().zipCode();
+		
+		Address address = new Address(city, street, number, zipcode, geolocation);
+		
+		//User
+		String email = faker.internet().emailAddress();
+		String username = faker.name().username();
+		String password = faker.internet().password();
+		String phonenumber = faker.phoneNumber().cellPhone();
+		
+		return new User(email, username, password, name, address, phonenumber);
+	}
+	
+	//Cart
+		public static Cart cartPayload(int userId) {
+	        List<CartProduct> products = new ArrayList<>();
+	        
+	        
+	        // Adding one random product to the cart
+	        int productId = random.nextInt(100);
+	        int quantity = random.nextInt(10) + 1;
+	               
+	        CartProduct cartProduct= new CartProduct(productId, quantity);
+	        products.add(cartProduct);
+
+	        
+	        //new Date()  ----> Returns date like  Wed Feb 19 13:17:45 IST 202
+	        // We need to convert this to "yyyy-MM-dd" format in String 
+	        
+	         SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);// Define output date format
+	         String date = outputFormat.format(new Date());//Converting to String
+		    
+	        return new Cart(userId, date, products);
+	    }
 	
 	
 	
