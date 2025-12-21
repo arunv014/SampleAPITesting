@@ -1,57 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-21T16:09:02 JST" name="Default suite" finished-at="2025-12-21T16:09:13 JST" duration-ms="10885">
+  <suite started-at="2025-12-22T08:46:18 JST" name="Default suite" finished-at="2025-12-22T08:46:25 JST" duration-ms="6977">
     <groups>
     </groups>
-    <test started-at="2025-12-21T16:09:02 JST" name="Default test" finished-at="2025-12-21T16:09:13 JST" duration-ms="10885">
-      <class name="testcases.CartTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.CartTests@3b35a229]" started-at="2025-12-21T16:09:02 JST" name="setup" finished-at="2025-12-21T16:09:02 JST" duration-ms="671" status="PASS">
+    <test started-at="2025-12-22T08:46:18 JST" name="Default test" finished-at="2025-12-22T08:46:25 JST" duration-ms="6977">
+      <class name="testcases.SchemaTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.SchemaTests@29f7cefd]" started-at="2025-12-22T08:46:18 JST" name="setup" finished-at="2025-12-22T08:46:19 JST" duration-ms="679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCreateCart()[pri:0, instance:testcases.CartTests@3b35a229]" started-at="2025-12-21T16:09:02 JST" name="testCreateCart" finished-at="2025-12-21T16:09:07 JST" duration-ms="4796" status="PASS">
+        <test-method signature="testCartSchema()[pri:0, instance:testcases.SchemaTests@29f7cefd]" started-at="2025-12-22T08:46:19 JST" name="testCartSchema" finished-at="2025-12-22T08:46:23 JST" duration-ms="4606" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateCart -->
-        <test-method signature="testDeleteCart()[pri:0, instance:testcases.CartTests@3b35a229]" started-at="2025-12-21T16:09:07 JST" name="testDeleteCart" finished-at="2025-12-21T16:09:08 JST" duration-ms="1005" status="PASS">
+        </test-method> <!-- testCartSchema -->
+        <test-method signature="testProductSchema()[pri:0, instance:testcases.SchemaTests@29f7cefd]" started-at="2025-12-22T08:46:23 JST" name="testProductSchema" finished-at="2025-12-22T08:46:24 JST" duration-ms="935" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDeleteCart -->
-        <test-method signature="testGetAllCarts()[pri:0, instance:testcases.CartTests@3b35a229]" started-at="2025-12-21T16:09:08 JST" name="testGetAllCarts" finished-at="2025-12-21T16:09:09 JST" duration-ms="538" status="PASS">
+        </test-method> <!-- testProductSchema -->
+        <test-method signature="testUserSchema()[pri:0, instance:testcases.SchemaTests@29f7cefd]" started-at="2025-12-22T08:46:24 JST" name="testUserSchema" finished-at="2025-12-22T08:46:25 JST" duration-ms="537" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetAllCarts -->
-        <test-method signature="testGetCartById()[pri:0, instance:testcases.CartTests@3b35a229]" started-at="2025-12-21T16:09:09 JST" name="testGetCartById" finished-at="2025-12-21T16:09:09 JST" duration-ms="508" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetCartById -->
-        <test-method signature="testGetCartsByDateRange()[pri:0, instance:testcases.CartTests@3b35a229]" started-at="2025-12-21T16:09:09 JST" name="testGetCartsByDateRange" finished-at="2025-12-21T16:09:10 JST" duration-ms="603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetCartsByDateRange -->
-        <test-method signature="testGetCartsSorted()[pri:0, instance:testcases.CartTests@3b35a229]" started-at="2025-12-21T16:09:10 JST" name="testGetCartsSorted" finished-at="2025-12-21T16:09:11 JST" duration-ms="525" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetCartsSorted -->
-        <test-method signature="testGetCartsSortedAsc()[pri:0, instance:testcases.CartTests@3b35a229]" started-at="2025-12-21T16:09:11 JST" name="testGetCartsSortedAsc" finished-at="2025-12-21T16:09:11 JST" duration-ms="515" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetCartsSortedAsc -->
-        <test-method signature="testGetCartsWithLimit()[pri:0, instance:testcases.CartTests@3b35a229]" started-at="2025-12-21T16:09:11 JST" name="testGetCartsWithLimit" finished-at="2025-12-21T16:09:12 JST" duration-ms="504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetCartsWithLimit -->
-        <test-method signature="testGetUserCart()[pri:0, instance:testcases.CartTests@3b35a229]" started-at="2025-12-21T16:09:12 JST" name="testGetUserCart" finished-at="2025-12-21T16:09:12 JST" duration-ms="504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetUserCart -->
-        <test-method signature="testUpdateCart()[pri:0, instance:testcases.CartTests@3b35a229]" started-at="2025-12-21T16:09:12 JST" name="testUpdateCart" finished-at="2025-12-21T16:09:13 JST" duration-ms="423" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdateCart -->
-      </class> <!-- testcases.CartTests -->
+        </test-method> <!-- testUserSchema -->
+      </class> <!-- testcases.SchemaTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

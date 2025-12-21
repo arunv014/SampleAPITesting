@@ -46,5 +46,6 @@ public class Routes {
     public static final String UPDATE_USER = "/users/{id}";
     public static final String DELETE_USER = "/users/{id}";
 	
-
+  //Login (Auth)
+    public static final String AUTH_LOGIN = "/auth/login";
 }

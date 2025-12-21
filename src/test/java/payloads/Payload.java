@@ -13,6 +13,7 @@ import pojo.Address;
 import pojo.Cart;
 import pojo.CartProduct;
 import pojo.Geolocation;
+import pojo.Login;
 import pojo.Name;
 import pojo.Product;
 import pojo.Products;
@@ -130,7 +131,14 @@ public class Payload {
 	        return new Cart(userId, date, products);
 	    }
 	
-	
+		//Login
+		
+		public static Login loginPayLoad() {
+			String username=faker.name().username();
+			String password=faker.internet().password();
+			
+			return new Login(username, password);
+		}
 	
 
 }
