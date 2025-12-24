@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-API_Test_Suite" class="navigator-link">
+              <span class="suite-name border-passed">API Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-API_Test_Suite" class="navigator-link ">
+                    <span>D:\Workspace for Selenium\Workspace for learning Jenkins\SampleAPITesting\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-API_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-API_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-API_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-API_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-API_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-API_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">30 methods,   30 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-API_Test_Suite" class="hide-methods passed suite-API_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-API_Test_Suite -->
+                      <a href="#" panel-name="suite-API_Test_Suite" class="show-methods passed suite-API_Test_Suite"> (show)</a> <!-- show-methods passed suite-API_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-API_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.CartTests" class="method navigator-link" hash-for-method="testCreateCart">testCreateCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testCreateProduct">testCreateProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.UserTests" class="method navigator-link" hash-for-method="testCreateuser">testCreateuser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.CartTests" class="method navigator-link" hash-for-method="testDeleteCart">testDeleteCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testDeleteProduct">testDeleteProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.UserTests" class="method navigator-link" hash-for-method="testDeleteUser">testDeleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.CartTests" class="method navigator-link" hash-for-method="testGetAllCarts">testGetAllCarts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testGetAllProducts">testGetAllProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.UserTests" class="method navigator-link" hash-for-method="testGetAllUsers">testGetAllUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.CartTests" class="method navigator-link" hash-for-method="testGetCartById">testGetCartById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.CartTests" class="method navigator-link" hash-for-method="testGetCartsByDateRange">testGetCartsByDateRange</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.CartTests" class="method navigator-link" hash-for-method="testGetCartsSorted">testGetCartsSorted</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.CartTests" class="method navigator-link" hash-for-method="testGetCartsSortedAsc">testGetCartsSortedAsc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.CartTests" class="method navigator-link" hash-for-method="testGetCartsWithLimit">testGetCartsWithLimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testGetProductById">testGetProductById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testGetProductWithinLimit">testGetProductWithinLimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.CartTests" class="method navigator-link" hash-for-method="testGetUserCart">testGetUserCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.LoginTests" class="method navigator-link" hash-for-method="testInvalidLogin">testInvalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.UserTests" class="method navigator-link" hash-for-method="testRetrieveUserById">testRetrieveUserById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.UserTests" class="method navigator-link" hash-for-method="testRetrieveUserWithinLimit">testRetrieveUserWithinLimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.UserTests" class="method navigator-link" hash-for-method="testRetrieveUsersAscending">testRetrieveUsersAscending</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testToRetrieveAllCategories">testToRetrieveAllCategories</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testToRetrieveAscendingOrderProducts">testToRetrieveAscendingOrderProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testToRetrieveProductByCategory">testToRetrieveProductByCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testToRetrieveSortedProductsDescending">testToRetrieveSortedProductsDescending</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.UserTests" class="method navigator-link" hash-for-method="testToRetrieveUserDescending">testToRetrieveUserDescending</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.CartTests" class="method navigator-link" hash-for-method="testUpdateCart">testUpdateCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testUpdateProduct">testUpdateProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.UserTests" class="method navigator-link" hash-for-method="testUpdateUser">testUpdateUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="testcases.LoginTests" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-API_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-API_Test_Suite" class="panel API_Test_Suite">
+          <div class="suite-API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.CartTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateCart">
+                  </a> <!-- testCreateCart -->
+                  <span class="method-name">testCreateCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteCart">
+                  </a> <!-- testDeleteCart -->
+                  <span class="method-name">testDeleteCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllCarts">
+                  </a> <!-- testGetAllCarts -->
+                  <span class="method-name">testGetAllCarts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetCartById">
+                  </a> <!-- testGetCartById -->
+                  <span class="method-name">testGetCartById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetCartsByDateRange">
+                  </a> <!-- testGetCartsByDateRange -->
+                  <span class="method-name">testGetCartsByDateRange</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetCartsSorted">
+                  </a> <!-- testGetCartsSorted -->
+                  <span class="method-name">testGetCartsSorted</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetCartsSortedAsc">
+                  </a> <!-- testGetCartsSortedAsc -->
+                  <span class="method-name">testGetCartsSortedAsc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetCartsWithLimit">
+                  </a> <!-- testGetCartsWithLimit -->
+                  <span class="method-name">testGetCartsWithLimit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserCart">
+                  </a> <!-- testGetUserCart -->
+                  <span class="method-name">testGetUserCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateCart">
+                  </a> <!-- testUpdateCart -->
+                  <span class="method-name">testUpdateCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Test_Suite-class-passed -->
+          <div class="suite-API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.UserTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateuser">
+                  </a> <!-- testCreateuser -->
+                  <span class="method-name">testCreateuser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteUser">
+                  </a> <!-- testDeleteUser -->
+                  <span class="method-name">testDeleteUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllUsers">
+                  </a> <!-- testGetAllUsers -->
+                  <span class="method-name">testGetAllUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRetrieveUserById">
+                  </a> <!-- testRetrieveUserById -->
+                  <span class="method-name">testRetrieveUserById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRetrieveUserWithinLimit">
+                  </a> <!-- testRetrieveUserWithinLimit -->
+                  <span class="method-name">testRetrieveUserWithinLimit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRetrieveUsersAscending">
+                  </a> <!-- testRetrieveUsersAscending -->
+                  <span class="method-name">testRetrieveUsersAscending</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testToRetrieveUserDescending">
+                  </a> <!-- testToRetrieveUserDescending -->
+                  <span class="method-name">testToRetrieveUserDescending</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUser">
+                  </a> <!-- testUpdateUser -->
+                  <span class="method-name">testUpdateUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Test_Suite-class-passed -->
+          <div class="suite-API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.ProductTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateProduct">
+                  </a> <!-- testCreateProduct -->
+                  <span class="method-name">testCreateProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteProduct">
+                  </a> <!-- testDeleteProduct -->
+                  <span class="method-name">testDeleteProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllProducts">
+                  </a> <!-- testGetAllProducts -->
+                  <span class="method-name">testGetAllProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetProductById">
+                  </a> <!-- testGetProductById -->
+                  <span class="method-name">testGetProductById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetProductWithinLimit">
+                  </a> <!-- testGetProductWithinLimit -->
+                  <span class="method-name">testGetProductWithinLimit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testToRetrieveAllCategories">
+                  </a> <!-- testToRetrieveAllCategories -->
+                  <span class="method-name">testToRetrieveAllCategories</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testToRetrieveAscendingOrderProducts">
+                  </a> <!-- testToRetrieveAscendingOrderProducts -->
+                  <span class="method-name">testToRetrieveAscendingOrderProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testToRetrieveProductByCategory">
+                  </a> <!-- testToRetrieveProductByCategory -->
+                  <span class="method-name">testToRetrieveProductByCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testToRetrieveSortedProductsDescending">
+                  </a> <!-- testToRetrieveSortedProductsDescending -->
+                  <span class="method-name">testToRetrieveSortedProductsDescending</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateProduct">
+                  </a> <!-- testUpdateProduct -->
+                  <span class="method-name">testUpdateProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Test_Suite-class-passed -->
+          <div class="suite-API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.LoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin">
+                  </a> <!-- testInvalidLogin -->
+                  <span class="method-name">testInvalidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin">
+                  </a> <!-- testValidLogin -->
+                  <span class="method-name">testValidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Test_Suite-class-passed -->
+        </div> <!-- panel API_Test_Suite -->
+        <div panel-name="test-xml-API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Workspace for Selenium\Workspace for learning Jenkins\SampleAPITesting\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;API Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.ExtentReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Product Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.ProductTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Product Tests --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;User Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.UserTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- User Test --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Login Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.LoginTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Tests --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Cart Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.CartTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Cart Tests --&gt;
+&lt;/suite&gt; &lt;!-- API Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Product Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">User Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Cart Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_API_Test_Suite');
+function tableData_API_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(30);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCreateuser')
+data.setCell(0, 2, 'testcases.UserTests')
+data.setCell(0, 3, 5186);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCreateProduct')
+data.setCell(1, 2, 'testcases.ProductTests')
+data.setCell(1, 3, 5171);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testGetAllProducts')
+data.setCell(2, 2, 'testcases.ProductTests')
+data.setCell(2, 3, 1248);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testGetAllUsers')
+data.setCell(3, 2, 'testcases.UserTests')
+data.setCell(3, 3, 1098);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDeleteUser')
+data.setCell(4, 2, 'testcases.UserTests')
+data.setCell(4, 3, 1090);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testRetrieveUserById')
+data.setCell(5, 2, 'testcases.UserTests')
+data.setCell(5, 3, 1075);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testToRetrieveUserDescending')
+data.setCell(6, 2, 'testcases.UserTests')
+data.setCell(6, 3, 1050);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testDeleteProduct')
+data.setCell(7, 2, 'testcases.ProductTests')
+data.setCell(7, 3, 1048);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testGetProductById')
+data.setCell(8, 2, 'testcases.ProductTests')
+data.setCell(8, 3, 949);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testInvalidLogin')
+data.setCell(9, 2, 'testcases.LoginTests')
+data.setCell(9, 3, 824);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testValidLogin')
+data.setCell(10, 2, 'testcases.LoginTests')
+data.setCell(10, 3, 695);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testRetrieveUserWithinLimit')
+data.setCell(11, 2, 'testcases.UserTests')
+data.setCell(11, 3, 587);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testGetCartById')
+data.setCell(12, 2, 'testcases.CartTests')
+data.setCell(12, 3, 574);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testGetCartsByDateRange')
+data.setCell(13, 2, 'testcases.CartTests')
+data.setCell(13, 3, 558);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testRetrieveUsersAscending')
+data.setCell(14, 2, 'testcases.UserTests')
+data.setCell(14, 3, 557);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testGetAllCarts')
+data.setCell(15, 2, 'testcases.CartTests')
+data.setCell(15, 3, 539);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testGetCartsSorted')
+data.setCell(16, 2, 'testcases.CartTests')
+data.setCell(16, 3, 532);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testGetCartsSortedAsc')
+data.setCell(17, 2, 'testcases.CartTests')
+data.setCell(17, 3, 532);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testGetProductWithinLimit')
+data.setCell(18, 2, 'testcases.ProductTests')
+data.setCell(18, 3, 518);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testCreateCart')
+data.setCell(19, 2, 'testcases.CartTests')
+data.setCell(19, 3, 513);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testGetUserCart')
+data.setCell(20, 2, 'testcases.CartTests')
+data.setCell(20, 3, 504);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testGetCartsWithLimit')
+data.setCell(21, 2, 'testcases.CartTests')
+data.setCell(21, 3, 500);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testDeleteCart')
+data.setCell(22, 2, 'testcases.CartTests')
+data.setCell(22, 3, 487);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testToRetrieveAscendingOrderProducts')
+data.setCell(23, 2, 'testcases.ProductTests')
+data.setCell(23, 3, 483);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testToRetrieveAllCategories')
+data.setCell(24, 2, 'testcases.ProductTests')
+data.setCell(24, 3, 457);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testUpdateUser')
+data.setCell(25, 2, 'testcases.UserTests')
+data.setCell(25, 3, 453);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testUpdateCart')
+data.setCell(26, 2, 'testcases.CartTests')
+data.setCell(26, 3, 453);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testToRetrieveProductByCategory')
+data.setCell(27, 2, 'testcases.ProductTests')
+data.setCell(27, 3, 452);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testToRetrieveSortedProductsDescending')
+data.setCell(28, 2, 'testcases.ProductTests')
+data.setCell(28, 3, 419);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testUpdateProduct')
+data.setCell(29, 2, 'testcases.ProductTests')
+data.setCell(29, 3, 388);
+window.suiteTableData['API_Test_Suite']= { tableData: data, tableDiv: 'times-div-API_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <div id="times-div-API_Test_Suite">
+              </div> <!-- times-div-API_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ProductTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.UserTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ProductTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCreateProduct</span>
+                <span class="method-start">652 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.UserTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCreateuser</span>
+                <span class="method-start">652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteUser</span>
+                <span class="method-start">6000 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ProductTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testDeleteProduct</span>
+                <span class="method-start">6002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetAllProducts</span>
+                <span class="method-start">7057 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.UserTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testGetAllUsers</span>
+                <span class="method-start">7095 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRetrieveUserById</span>
+                <span class="method-start">8198 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ProductTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testGetProductById</span>
+                <span class="method-start">8313 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetProductWithinLimit</span>
+                <span class="method-start">9272 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.UserTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testRetrieveUserWithinLimit</span>
+                <span class="method-start">9279 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ProductTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testToRetrieveAllCategories</span>
+                <span class="method-start">9800 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.UserTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testRetrieveUsersAscending</span>
+                <span class="method-start">9873 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ProductTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testToRetrieveAscendingOrderProducts</span>
+                <span class="method-start">10260 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.UserTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testToRetrieveUserDescending</span>
+                <span class="method-start">10433 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ProductTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testToRetrieveProductByCategory</span>
+                <span class="method-start">10749 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testToRetrieveSortedProductsDescending</span>
+                <span class="method-start">11205 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.UserTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUser</span>
+                <span class="method-start">11487 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ProductTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testUpdateProduct</span>
+                <span class="method-start">11630 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">12624 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CartTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">12626 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testCreateCart</span>
+                <span class="method-start">12628 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin</span>
+                <span class="method-start">12630 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CartTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testDeleteCart</span>
+                <span class="method-start">13144 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin</span>
+                <span class="method-start">13461 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CartTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testGetAllCarts</span>
+                <span class="method-start">13635 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetCartById</span>
+                <span class="method-start">14177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetCartsByDateRange</span>
+                <span class="method-start">14755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetCartsSorted</span>
+                <span class="method-start">15315 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetCartsSortedAsc</span>
+                <span class="method-start">15849 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetCartsWithLimit</span>
+                <span class="method-start">16385 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetUserCart</span>
+                <span class="method-start">16890 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateCart</span>
+                <span class="method-start">17399 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
