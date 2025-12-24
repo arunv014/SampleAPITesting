@@ -22,7 +22,7 @@ public class SchemaTests extends BaseClass{
 		.statusCode(200)
 		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("productSchema.json"));
 	}
-	//@Test
+	@Test
 	public void testCartSchema() {
 		
 		given()
